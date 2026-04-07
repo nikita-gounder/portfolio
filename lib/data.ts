@@ -99,7 +99,7 @@ export interface Project {
   description: string;
   tags: string[];
   links: { label: string; href: string }[];
-  image?: string; // e.g. "/projects/schoolkit.png"
+  images?: string[]; // e.g. ["/projects/schoolkit-1.png", "/projects/schoolkit-2.png"]
 }
 
 export const projects: Project[] = [
@@ -107,7 +107,7 @@ export const projects: Project[] = [
     name: "SchoolKit",
     org: "Stanford Biodesign",
     period: "January 2026 – Present",
-    image: "/projects/schoolkit.svg",
+    images: ["/projects/schoolkit.svg"],
     description:
       "Full-stack mobile and web application with multimedia educational content to support childhood cancer patients during hospital-to-school transition after diagnosis and treatment.",
     tags: ["React Native", "Expo", "Supabase", "ElevenLabs", "Figma"],
