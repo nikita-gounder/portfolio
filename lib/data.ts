@@ -107,7 +107,11 @@ export const projects: Project[] = [
     name: "SchoolKit",
     org: "Stanford Biodesign",
     period: "January 2026 – Present",
-    images: ["/projects/schoolkit.svg"],
+    images: [
+  "/projects/schoolkit-1.png",
+  "/projects/schoolkit-2.png",
+  "/projects/schoolkit-3.png",
+],
     description:
       "Full-stack mobile and web application with multimedia educational content to support childhood cancer patients during hospital-to-school transition after diagnosis and treatment.",
     tags: ["React Native", "Expo", "Supabase", "ElevenLabs", "Figma"],
