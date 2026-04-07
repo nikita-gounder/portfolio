@@ -5,7 +5,16 @@ export default function ProjectCard({ project }: { project: Project }) {
   const primaryLink = project.links[0];
 
   const cardContent = (
-    <div className="group flex flex-col gap-3 rounded-xl border border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 p-5 transition hover:border-zinc-400 hover:bg-zinc-100 dark:hover:border-zinc-600 dark:hover:bg-zinc-800/60 h-full">
+    <div className="group flex flex-col gap-3 rounded-xl border border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 overflow-hidden transition hover:border-zinc-400 hover:bg-zinc-100 dark:hover:border-zinc-600 dark:hover:bg-zinc-800/60 h-full">
+      {project.image && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={project.image}
+          alt={project.name}
+          className="w-full h-40 object-cover"
+        />
+      )}
+      <div className="flex flex-col gap-3 p-5 flex-1">
       <div className="flex items-start justify-between gap-2">
         <div>
           <h3 className="text-base font-semibold text-zinc-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
@@ -49,6 +58,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
       )}
+      </div>
     </div>
   );
 

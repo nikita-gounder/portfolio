@@ -99,6 +99,7 @@ export interface Project {
   description: string;
   tags: string[];
   links: { label: string; href: string }[];
+  image?: string; // e.g. "/projects/schoolkit.png"
 }
 
 export const projects: Project[] = [
