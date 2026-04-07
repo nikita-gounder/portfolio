@@ -99,8 +99,9 @@ export interface Project {
   description: string;
   tags: string[];
   links: { label: string; href: string }[];
-  images?: string[]; // e.g. ["/projects/schoolkit-1.png", "/projects/schoolkit-2.png"]
-  layout?: "carousel" | "side-by-side"; // default: "carousel"
+  // Each slide is either a single image path or an array of paths shown side-by-side
+  // e.g. slides: ["/projects/img1.png", ["/projects/img2.png", "/projects/img3.png"]]
+  slides?: (string | string[])[];
 }
 
 export const projects: Project[] = [
@@ -108,11 +109,10 @@ export const projects: Project[] = [
     name: "SchoolKit",
     org: "Stanford Biodesign",
     period: "January 2026 – Present",
-    images: [
-  "/projects/schoolkit-1.png",
-  "/projects/schoolkit-2.png",
-  "/projects/schoolkit-3.png",
-],
+    slides: [
+      "/projects/schoolkit-1.png",
+      ["/projects/schoolkit-2.png", "/projects/schoolkit-3.png", "/projects/schoolkit-4.png"],
+    ],
     description:
       "Full-stack mobile and web application with multimedia educational content to support childhood cancer patients during hospital-to-school transition after diagnosis and treatment.",
     tags: ["React Native", "Expo", "Supabase", "ElevenLabs", "Figma"],
