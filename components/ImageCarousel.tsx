@@ -10,16 +10,18 @@ function Slide({ slide, alt }: { slide: string | string[]; alt: string }) {
     );
   }
   return (
-    <div className="flex gap-1 h-full w-full overflow-x-auto">
-      {slide.map((src, i) => (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          key={i}
-          src={src}
-          alt={`${alt} ${i + 1}`}
-          className="h-full w-auto object-cover flex-shrink-0"
-        />
-      ))}
+    <div className="h-full w-full overflow-x-auto">
+      <div className="flex gap-1 h-full w-fit mx-auto">
+        {slide.map((src, i) => (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            key={i}
+            src={src}
+            alt={`${alt} ${i + 1}`}
+            className="h-full w-auto object-cover flex-shrink-0"
+          />
+        ))}
+      </div>
     </div>
   );
 }
