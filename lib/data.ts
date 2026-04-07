@@ -100,6 +100,7 @@ export interface Project {
   tags: string[];
   links: { label: string; href: string }[];
   images?: string[]; // e.g. ["/projects/schoolkit-1.png", "/projects/schoolkit-2.png"]
+  layout?: "carousel" | "side-by-side"; // default: "carousel"
 }
 
 export const projects: Project[] = [

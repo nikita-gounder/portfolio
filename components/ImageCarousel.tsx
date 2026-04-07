@@ -5,13 +5,32 @@ import { useState } from "react";
 export default function ImageCarousel({
   images,
   alt,
+  layout = "carousel",
 }: {
   images: string[];
   alt: string;
+  layout?: "carousel" | "side-by-side";
 }) {
   const [index, setIndex] = useState(0);
 
   if (images.length === 0) return null;
+
+  if (layout === "side-by-side") {
+    return (
+      <div className="flex gap-1 w-full overflow-x-auto h-64">
+        {images.map((src, i) => (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            key={i}
+            src={src}
+            alt={`${alt} ${i + 1}`}
+            className="h-full w-auto object-cover flex-shrink-0 rounded-sm"
+          />
+        ))}
+      </div>
+    );
+  }
+
   if (images.length === 1) {
     return (
       // eslint-disable-next-line @next/next/no-img-element
@@ -38,7 +57,6 @@ export default function ImageCarousel({
         className="w-full h-full object-cover transition-opacity duration-200"
       />
 
-      {/* Prev / Next buttons */}
       <button
         onClick={prev}
         className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/50 hover:bg-black/70 text-white w-7 h-7 flex items-center justify-center transition-colors"
@@ -54,7 +72,6 @@ export default function ImageCarousel({
         ›
       </button>
 
-      {/* Dot indicators */}
       <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
         {images.map((_, i) => (
           <button

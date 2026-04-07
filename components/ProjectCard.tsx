@@ -8,7 +8,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   const cardContent = (
     <div className="group flex flex-col rounded-xl border border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 overflow-hidden transition hover:border-zinc-400 hover:bg-zinc-100 dark:hover:border-zinc-600 dark:hover:bg-zinc-800/60 h-full">
       {project.images && project.images.length > 0 && (
-        <ImageCarousel images={project.images} alt={project.name} />
+        <ImageCarousel images={project.images} alt={project.name} layout={project.layout} />
       )}
       <div className="flex flex-col gap-3 p-5 flex-1">
         <div className="flex items-start justify-between gap-2">
