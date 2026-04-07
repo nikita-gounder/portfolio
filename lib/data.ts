@@ -148,4 +148,16 @@ export const projects: Project[] = [
       // { label: "Paper", href: "https://..." },
     ],
   },
+  {
+    order: 4,
+    name: "Scientific Literature Research Platform",
+    org: "Next.Bio AI Hackathon",
+    period: "Oct 2025",
+    description:
+      "Built a Retrieval-Augmented Generation system to query scientific papers with context-aware responses, with a Streamlit interface displaying AI-generated summaries and abstracts.",
+    tags: ["Python", "Streamlit", "RAG", "LLMs", "Prompt Engineering", "PubMed/NCBI"],
+    links: [
+      // { label: "GitHub", href: "https://github.com/nikita-gounder/..." },
+    ],
+  },
 ];
