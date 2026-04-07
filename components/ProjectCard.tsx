@@ -13,10 +13,10 @@ export default function ProjectCard({ project }: { project: Project }) {
       <div className="flex flex-col gap-3 p-5 flex-1">
         <div className="flex items-start justify-between gap-2">
           <div>
-            <h3 className="text-base font-semibold text-zinc-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+            <h3 className="text-lg font-semibold text-zinc-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
               {project.name}
             </h3>
-            <p className="text-sm text-zinc-500 mt-0.5">
+            <p className="text-base text-zinc-500 mt-0.5">
               {project.org} · {project.period}
             </p>
           </div>
