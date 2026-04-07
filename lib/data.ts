@@ -93,6 +93,7 @@ export const experience: Experience[] = [
 ];
 
 export interface Project {
+  order: number; // display order in the projects grid (1 = first)
   name: string;
   org: string;
   period: string;
@@ -106,9 +107,10 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    order: 2,
     name: "SchoolKit",
     org: "Stanford Biodesign",
-    period: "January 2026 – Present",
+    period: "January 2026 – March 2026",
     slides: [
       "/projects/schoolkit-1.png",
       ["/projects/schoolkit-2.png", "/projects/schoolkit-3.png", "/projects/schoolkit-4.png"],
@@ -122,6 +124,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    order: 3,
     name: "AI Clinical Trial Recruitment Platform",
     org: "CalHacks 12.0",
     period: "Oct 2025",
@@ -134,6 +137,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    order: 1,
     name: "CSF Biomarker Analysis for Frontotemporal Dementia",
     org: "UCSF",
     period: "April 2025 – Present",
