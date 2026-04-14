@@ -116,7 +116,7 @@ export const projects: Project[] = [
       ["/projects/schoolkit-2.png", "/projects/schoolkit-3.png", "/projects/schoolkit-4.png"],
     ],
     description:
-      "Full-stack mobile and web application with multimedia educational content to support childhood cancer patients during hospital-to-school transition after diagnosis and treatment.",
+      "Full-stack mobile and web application with multimedia educational content to support childhood cancer patients during hospital-to-school transition after diagnosis and treatment. Developed with Stanford Medicine — code is not publicly shareable.",
     tags: ["React Native", "Expo", "Supabase", "ElevenLabs", "Figma"],
     links: [
       // { label: "GitHub", href: "https://github.com/nikita-gounder/schoolkit" },
