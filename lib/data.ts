@@ -111,6 +111,7 @@ export const projects: Project[] = [
     name: "Scribe",
     org: "Personal Project",
     period: "April 2026",
+    slides: ["/projects/scribe.png"],
     description:
       "Instantly turns data outputs into polished written narratives. Upload CSV tables, figures, or model summaries, choose your tone and format, and get publication-ready text in seconds. Refine and incorporate new data via chat. Built out of frustration with staring at R outputs and regression tables — for researchers, analysts, and consultants who have the numbers but need the words.",
     tags: ["Claude", "Gemini", "Codex", "LLMs", "AI"],
