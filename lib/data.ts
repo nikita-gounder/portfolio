@@ -137,10 +137,11 @@ export const projects: Project[] = [
     ],
   },
   {
-    order: 3,
+    order: 4,
     name: "AI Clinical Trial Recruitment Platform",
     org: "CalHacks 12.0",
     period: "Oct 2025",
+    slides: ["/projects/mify.png"],
     description:
       "Interactive AI voice agent for patient medical prescreening and a dashboard to generate plain-language informed consent forms from eligibility criteria.",
     tags: ["Python", "LLMs", "VAPI", "NLP", "Prompt Engineering"],
@@ -150,7 +151,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    order: 1,
+    order: 3,
     name: "CSF Biomarker Analysis for Frontotemporal Dementia",
     org: "UCSF",
     period: "April 2025 – Present",
@@ -166,13 +167,14 @@ export const projects: Project[] = [
     name: "Heart Failure Readmission Risk Analysis",
     org: "UCSF — Epi 231: Clinical Data Science",
     period: "2025",
+    slides: ["/projects/heart-failure.png"],
     description:
       "Identified patient characteristics most strongly associated with 30-day readmission among heart failure patients using UCSF Epic EHR data. Produced stratified descriptive statistics (Table 1), logistic regression results (Table 2), and visualizations. Data is de-identified and not publicly shareable.",
     tags: ["T-SQL", "R", "tidyverse", "ggplot2", "Logistic Regression", "EHR", "Clinical Data"],
     links: [],
   },
   {
-    order: 4,
+    order: 6,
     name: "Scientific Literature Research Platform",
     org: "Next.Bio AI Hackathon",
     period: "Oct 2025",
