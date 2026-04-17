@@ -107,6 +107,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    order: 1,
+    name: "Scribe",
+    org: "Personal Project",
+    period: "April 2026",
+    description:
+      "Instantly turns data outputs into polished written narratives. Upload CSV tables, figures, or model summaries, choose your tone and format, and get publication-ready text in seconds. Refine and incorporate new data via chat. Built out of frustration with staring at R outputs and regression tables — for researchers, analysts, and consultants who have the numbers but need the words.",
+    tags: ["Claude", "Gemini", "Codex", "LLMs", "AI"],
+    links: [
+      { label: "Live", href: "https://scribe-ai-fawn.vercel.app" },
+    ],
+  },
+  {
     order: 2,
     name: "SchoolKit",
     org: "Stanford Biodesign",
