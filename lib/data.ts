@@ -41,6 +41,26 @@ export interface Experience {
 
 export const experience: Experience[] = [
   {
+    org: "Corcept Therapeutics",
+    role: "Biometrics Intern",
+    period: "June 2026 – August 2026",
+    bullets: [
+      "Optimized Medidata patient profiles by creating derived variables and datasets, cortisol flags, and restructuring clinical data to improve data review, patient monitoring, and data visualization.",
+      "Evaluated propensity score matching methodologies for external control studies by reviewing FDA and EMA guidance, comparing matching strategies, and developing recommendations for cohort construction.",
+      "Collaborated on a cross-functional strategic assessment of MASH diagnostic partnerships, evaluating screening technologies and clinical trial integration to present recommendations to company leadership.",
+    ],
+  },
+  {
+    org: "UCSF Memory and Aging Center",
+    role: "Graduate Student Researcher",
+    period: "April 2025 – July 2026",
+    bullets: [
+      "Analyzed longitudinal cerebrospinal fluid proteomic datasets (NfL, GFAP, NPTX2) using R to evaluate biomarker performance in frontotemporal dementia progression across genotype and symptom-status cohorts.",
+      "Conducted ROC analysis, correlation testing, and mixed-effects longitudinal modeling to quantify biomarker associations with disease severity and diagnostic classification performance.",
+      "Cleaned, organized, and validated clinical datasets to support reproducible statistical analyses and interpretation of neurodegenerative disease biomarkers.",
+    ],
+  },
+  {
     org: "Micromole Inc.",
     role: "Lab Assistant",
     period: "March 2025 – Present",
@@ -108,6 +128,18 @@ export interface Project {
 export const projects: Project[] = [
   {
     order: 1,
+    name: "AuData",
+    org: "Biomedical Research-Integrity Auditor",
+    period: "June 2026",
+    description:
+      "Human-in-the-loop research-integrity auditing platform that reviews scientific papers for statistical errors, numerical inconsistencies, figure manipulation, methods-to-claim mismatches, and citation issues, surfacing calibrated, evidence-linked flags for expert review.",
+    tags: ["React", "TypeScript", "FastAPI", "LLMs", "Redis", "SQLite"],
+    links: [
+      { label: "GitHub", href: "https://github.com/haile-teshome/AuData" },
+    ],
+  },
+  {
+    order: 2,
     name: "Scribe",
     org: "Handshake",
     period: "April 2026",
@@ -120,7 +152,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    order: 2,
+    order: 3,
     name: "SchoolKit",
     org: "Stanford Biodesign",
     period: "January 2026 – March 2026",
@@ -137,7 +169,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    order: 4,
+    order: 5,
     name: "AI Clinical Trial Recruitment Platform",
     org: "CalHacks 12.0",
     period: "Oct 2025",
@@ -151,7 +183,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    order: 3,
+    order: 4,
     name: "CSF Biomarker Analysis for Frontotemporal Dementia",
     org: "UCSF",
     period: "April 2025 – Present",
@@ -163,7 +195,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    order: 5,
+    order: 6,
     name: "Heart Failure Readmission Risk Analysis",
     org: "UCSF — Epi 231: Clinical Data Science",
     period: "2025",
@@ -174,7 +206,7 @@ export const projects: Project[] = [
     links: [],
   },
   {
-    order: 6,
+    order: 7,
     name: "Scientific Literature Research Platform",
     org: "Next.Bio AI Hackathon",
     period: "Oct 2025",
