@@ -127,17 +127,31 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    order: 1,
-    name: "AuData",
-    org: "Biomedical Research-Integrity Auditor",
+    order: 4,
+    name: "AuData: Biomedical Research-Integrity Auditor",
+    org: "UC Berkeley AI Hackathon '26",
     period: "June 2026",
     slides: [
       "/projects/audata-1.png","/projects/audata-2.png", "/projects/audata-3.png"],
     description:
       "Human-in-the-loop research-integrity auditing platform that reviews scientific papers for statistical errors, numerical inconsistencies, figure manipulation, methods-to-claim mismatches, and citation issues, surfacing calibrated, evidence-linked flags for expert review.",
-    tags: ["React", "TypeScript", "FastAPI", "LLMs", "Redis", "SQLite"],
+    tags: ["Browserbase", "React", "TypeScript", "FastAPI", "LLMs", "Redis"],
     links: [
       { label: "GitHub", href: "https://github.com/haile-teshome/AuData" },
+    ],
+  },
+    {
+    order: 8,
+    name: "Auttune",
+    org: "YC x Medplum Hackathon",
+    period: "August 2026",
+    slides: [
+      "/projects/auttune-1.png","/projects/auttune-2.png", "/projects/auttune-3.png"],
+    description:
+      "A FHIR-native AI agent that streamlines post-discharge care with voice symptom check-ins, evidence-based triage, clinician notifications, and insurance-aware follow-up.",
+    tags: ["Medplum", "Moss", "Deepgram", "Stedi", "Typescript", "React"],
+    links: [
+      { label: "GitHub", href: "https://github.com/shwe-kandhalu/Attune" },
     ],
   },
   {
@@ -185,7 +199,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    order: 4,
+    order: 1,
     name: "CSF Biomarker Analysis for Frontotemporal Dementia",
     org: "UCSF",
     period: "April 2025 – Present",
