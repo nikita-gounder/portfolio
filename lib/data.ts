@@ -131,6 +131,10 @@ export const projects: Project[] = [
     name: "AuData",
     org: "Biomedical Research-Integrity Auditor",
     period: "June 2026",
+    slides: [
+      "/projects/audata-1.png",
+      ["/projects/audata-2.png", "/projects/audata-3.png"],
+    ],
     description:
       "Human-in-the-loop research-integrity auditing platform that reviews scientific papers for statistical errors, numerical inconsistencies, figure manipulation, methods-to-claim mismatches, and citation issues, surfacing calibrated, evidence-linked flags for expert review.",
     tags: ["React", "TypeScript", "FastAPI", "LLMs", "Redis", "SQLite"],
