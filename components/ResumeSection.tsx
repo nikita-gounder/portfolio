@@ -2,7 +2,7 @@ import { education, experience, coursework } from "@/lib/data";
 
 export default function ResumeSection() {
   return (
-    <section id="resume" className="pb-20 flex scroll-mt-6 flex-col gap-4">
+    <section className="pb-20 flex flex-col gap-4">
       {/* Education */}
       <div className="rounded-xl border border-zinc-200 bg-zinc-50 p-6 dark:border-zinc-800 dark:bg-zinc-900">
         <h2 className="mb-5 text-sm font-semibold uppercase tracking-widest text-zinc-500">
