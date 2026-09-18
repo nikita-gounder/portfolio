@@ -6,7 +6,11 @@ function Slide({ slide, alt }: { slide: string | string[]; alt: string }) {
   if (typeof slide === "string") {
     return (
       // eslint-disable-next-line @next/next/no-img-element
-      <img src={slide} alt={alt} className="w-full h-full object-cover" />
+      <img
+        src={slide}
+        alt={alt}
+        className="h-full w-full object-contain"
+      />
     );
   }
   return (
@@ -18,7 +22,7 @@ function Slide({ slide, alt }: { slide: string | string[]; alt: string }) {
             key={i}
             src={src}
             alt={`${alt} ${i + 1}`}
-            className="h-full w-auto object-cover flex-shrink-0"
+            className="h-full w-auto object-contain flex-shrink-0"
           />
         ))}
       </div>
@@ -39,7 +43,7 @@ export default function ImageCarousel({
 
   if (slides.length === 1) {
     return (
-      <div className="w-full h-56 overflow-hidden">
+      <div className="h-56 w-full overflow-hidden bg-zinc-100 dark:bg-zinc-950">
         <Slide slide={slides[0]} alt={alt} />
       </div>
     );
@@ -56,7 +60,7 @@ export default function ImageCarousel({
   }
 
   return (
-    <div className="relative w-full h-56 overflow-hidden">
+    <div className="relative h-56 w-full overflow-hidden bg-zinc-100 dark:bg-zinc-950">
       <Slide slide={slides[index]} alt={alt} />
 
       <button
