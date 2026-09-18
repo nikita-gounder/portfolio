@@ -31,6 +31,20 @@ export default function Header() {
         <p className="max-w-2xl text-base text-zinc-600 dark:text-zinc-400 leading-relaxed">
           {bio}
         </p>
+        <div className="mt-5 flex flex-wrap gap-3">
+          <a
+            href="#resume"
+            className="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
+          >
+            Education &amp; Experience
+          </a>
+          <a
+            href="#projects"
+            className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-200 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800"
+          >
+            Projects
+          </a>
+        </div>
         <div className="mt-4 flex gap-4 text-base">
           {socialLinks.map((link) => (
             <a

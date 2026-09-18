@@ -10,7 +10,7 @@ export default function Home() {
         <Header />
         <ResumeSection />
 
-        <section className="pb-24">
+        <section id="projects" className="scroll-mt-6 pb-24">
           <h2 className="mb-6 text-sm font-semibold uppercase tracking-widest text-zinc-500">
             Projects
           </h2>
