@@ -2,9 +2,9 @@ import { education, experience, coursework } from "@/lib/data";
 
 export default function ResumeSection() {
   return (
-    <section className="pb-20 flex flex-col gap-12">
+    <section className="pb-20 flex flex-col gap-4">
       {/* Education */}
-      <div>
+      <div className="rounded-xl border border-zinc-200 bg-zinc-50 p-6 dark:border-zinc-800 dark:bg-zinc-900">
         <h2 className="mb-5 text-sm font-semibold uppercase tracking-widest text-zinc-500">
           Education
         </h2>
@@ -33,40 +33,37 @@ export default function ResumeSection() {
       </div>
 
       {/* Experience */}
-      <div>
+      <div className="rounded-xl border border-zinc-200 bg-zinc-50 p-6 dark:border-zinc-800 dark:bg-zinc-900">
         <h2 className="mb-5 text-sm font-semibold uppercase tracking-widest text-zinc-500">
           Experience
         </h2>
         <div className="flex flex-col gap-6">
           {experience.map((job) => (
-            <div key={`${job.org}-${job.role}`} className="flex gap-4">
-              <div className="mt-2 h-2 w-2 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600" />
-              <div className="flex-1 min-w-0">
-                <div className="flex items-baseline justify-between gap-4">
-                  <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 min-w-0">
-                    <p className="text-base font-medium text-zinc-900 dark:text-white">
-                      {job.role}
-                    </p>
-                    <span className="text-zinc-400">·</span>
-                    <p className="text-base text-zinc-600 dark:text-zinc-400">
-                      {job.org}
-                    </p>
-                  </div>
-                  <span className="shrink-0 text-sm text-zinc-400 dark:text-zinc-600 whitespace-nowrap">
-                    {job.period}
-                  </span>
+            <div key={`${job.org}-${job.role}`}>
+              <div className="flex items-baseline justify-between gap-4">
+                <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 min-w-0">
+                  <p className="text-base font-medium text-zinc-900 dark:text-white">
+                    {job.role}
+                  </p>
+                  <span className="text-zinc-400">·</span>
+                  <p className="text-base text-zinc-600 dark:text-zinc-400">
+                    {job.org}
+                  </p>
                 </div>
-                <ul className="mt-1.5 flex flex-col gap-1">
-                  {job.bullets.map((b, i) => (
-                    <li
-                      key={i}
-                      className="text-base text-zinc-600 dark:text-zinc-400 leading-relaxed"
-                    >
-                      {b}
-                    </li>
-                  ))}
-                </ul>
+                <span className="shrink-0 text-sm text-zinc-400 dark:text-zinc-600 whitespace-nowrap">
+                  {job.period}
+                </span>
               </div>
+              <ul className="mt-1.5 flex list-disc flex-col gap-1 pl-5 marker:text-zinc-400 dark:marker:text-zinc-600">
+                {job.bullets.map((b, i) => (
+                  <li
+                    key={i}
+                    className="text-base text-zinc-600 dark:text-zinc-400 leading-relaxed"
+                  >
+                    {b}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

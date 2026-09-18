@@ -85,21 +85,21 @@ export const experience: Experience[] = [
     ],
   },
   {
-    org: "University of California, Berkeley — Firestone Lab",
-    role: "Student Researcher",
-    period: "Sept 2022 – Dec 2023",
-    bullets: [
-      "Analyzed microbial community seasonal dynamics using R for statistical analysis and visualization.",
-      "Built custom Python pipelines to parse and clean biogeochemical CO₂ data.",
-    ],
-  },
-  {
     org: "University of California, Berkeley — Banfield Lab",
     role: "Lab Technician",
     period: "Jan 2024 – Sept 2024",
     bullets: [
       "Conducted DNA and RNA extractions to optimize protocols across sample types.",
       "Managed laboratory operations including hazardous waste disposal and inventory.",
+    ],
+  },
+  {
+    org: "University of California, Berkeley — Firestone Lab",
+    role: "Student Researcher",
+    period: "Sept 2022 – Dec 2023",
+    bullets: [
+      "Analyzed microbial community seasonal dynamics using R for statistical analysis and visualization.",
+      "Built custom Python pipelines to parse and clean biogeochemical CO₂ data.",
     ],
   },
   {
@@ -127,7 +127,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    order: 4,
+    order: 5,
     name: "AuData: Biomedical Research-Integrity Auditor",
     org: "UC Berkeley AI Hackathon '26",
     period: "June 2026",
@@ -141,7 +141,7 @@ export const projects: Project[] = [
     ],
   },
     {
-    order: 8,
+    order: 6,
     name: "Auttune",
     org: "YC x Medplum Hackathon",
     period: "August 2026",
@@ -155,7 +155,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    order: 2,
+    order: 4,
     name: "Scribe",
     org: "Handshake",
     period: "April 2026",
@@ -185,7 +185,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    order: 5,
+    order: 7,
     name: "AI Clinical Trial Recruitment Platform",
     org: "CalHacks 12.0",
     period: "Oct 2025",
@@ -202,7 +202,9 @@ export const projects: Project[] = [
     order: 1,
     name: "CSF Biomarker Analysis for Frontotemporal Dementia",
     org: "UCSF",
-    period: "April 2025 – Present",
+    period: "April 2025 – July 2026",
+    slides: [
+      "/projects/ftd-1.png","/projects/ftd-2.png", "/projects/ftd-3.png"],
     description:
       "Analyzed cerebrospinal fluid proteomic data to evaluate diagnostic accuracy of neurodegeneration biomarkers (NfL, GFAP, NPTX2) for FTD disease severity using ROC curves, correlation analyses, and mixed-model longitudinal analyses.",
     tags: ["R", "Biostatistics", "Proteomics", "Clinical Research"],
@@ -211,9 +213,9 @@ export const projects: Project[] = [
     ],
   },
   {
-    order: 6,
+    order: 2,
     name: "Heart Failure Readmission Risk Analysis",
-    org: "UCSF — Epi 231: Clinical Data Science",
+    org: "UCSF — Epi 231: Clinical EHR Data Science",
     period: "2025",
     slides: ["/projects/heart-failure.png"],
     description:
@@ -222,7 +224,7 @@ export const projects: Project[] = [
     links: [],
   },
   {
-    order: 7,
+    order: 8,
     name: "Scientific Literature Research Platform",
     org: "Next.Bio AI Hackathon",
     period: "Oct 2025",

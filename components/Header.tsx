@@ -24,22 +24,26 @@ export default function Header() {
         <ThemeToggle />
       </div>
 
-      <p className="max-w-2xl text-base text-zinc-600 dark:text-zinc-400 leading-relaxed">
-        {bio}
-      </p>
-
-      <div className="flex gap-4 text-base">
-        {socialLinks.map((link) => (
-          <a
-            key={link.label}
-            href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
-          >
-            {link.label} ↗
-          </a>
-        ))}
+      <div className="rounded-xl border border-zinc-200 bg-zinc-50 p-6 dark:border-zinc-800 dark:bg-zinc-900">
+        <h2 className="mb-3 text-sm font-semibold uppercase tracking-widest text-zinc-500">
+          About Me
+        </h2>
+        <p className="max-w-2xl text-base text-zinc-600 dark:text-zinc-400 leading-relaxed">
+          {bio}
+        </p>
+        <div className="mt-4 flex gap-4 text-base">
+          {socialLinks.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+            >
+              {link.label} ↗
+            </a>
+          ))}
+        </div>
       </div>
     </header>
   );
