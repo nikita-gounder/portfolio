@@ -18,17 +18,17 @@ export default function PortfolioTabs({
       <div
         role="tablist"
         aria-label="Portfolio sections"
-        className="mb-6 flex gap-2 border-b border-zinc-200 dark:border-zinc-800"
+        className="mb-6 inline-flex rounded-full border border-zinc-200 bg-zinc-50 p-1 dark:border-zinc-800 dark:bg-zinc-900"
       >
         <button
           type="button"
           role="tab"
           aria-selected={activeTab === "resume"}
           onClick={() => setActiveTab("resume")}
-          className={`border-b-2 px-4 py-3 text-sm font-medium transition-colors ${
+          className={`rounded-full px-6 py-3 text-base font-medium transition-colors ${
             activeTab === "resume"
-              ? "border-zinc-900 text-zinc-900 dark:border-white dark:text-white"
-              : "border-transparent text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+              ? "bg-zinc-900 text-white dark:bg-white dark:text-zinc-900"
+              : "text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
           }`}
         >
           Education &amp; Experience
@@ -38,10 +38,10 @@ export default function PortfolioTabs({
           role="tab"
           aria-selected={activeTab === "projects"}
           onClick={() => setActiveTab("projects")}
-          className={`border-b-2 px-4 py-3 text-sm font-medium transition-colors ${
+          className={`rounded-full px-6 py-3 text-base font-medium transition-colors ${
             activeTab === "projects"
-              ? "border-zinc-900 text-zinc-900 dark:border-white dark:text-white"
-              : "border-transparent text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+              ? "bg-zinc-900 text-white dark:bg-white dark:text-zinc-900"
+              : "text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
           }`}
         >
           Projects
